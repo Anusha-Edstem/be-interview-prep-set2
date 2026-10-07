@@ -17,3 +17,9 @@ spring:
       pageable:
         default-page-size: 20
         max-page-size: 100
+
+app:
+  rate-limit:
+    limit: 10
+    window: 1m
+    header-name: X-API-Key
