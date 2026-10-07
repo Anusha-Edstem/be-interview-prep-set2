@@ -7,10 +7,8 @@ import com.edstem.interviewprep.ratelimit.service.RateLimitDecision;
 import com.edstem.interviewprep.ratelimit.service.RateLimiter;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-@Component
 public class RateLimitInterceptor implements HandlerInterceptor {
 
   static final String LIMIT_HEADER = "X-RateLimit-Limit";
