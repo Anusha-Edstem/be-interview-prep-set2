@@ -33,3 +33,8 @@ app:
     limit: 10
     window: 1m
     header-name: X-API-Key
+  booking:
+    day-start: "09:00"
+    day-end: "17:00"
+    slot-length: 30m
+    hold-length: 5m
