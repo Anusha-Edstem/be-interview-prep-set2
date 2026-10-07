@@ -37,3 +37,7 @@ app:
   storage:
     location: ${FILE_STORAGE_LOCATION:${java.io.tmpdir}/be-interview-prep-set2/uploads}
     max-file-size: 5MB
+  rate-limit:
+    limit: ${RATE_LIMIT_REQUESTS:10}
+    window: ${RATE_LIMIT_WINDOW:1m}
+    header-name: ${RATE_LIMIT_HEADER:X-API-Key}

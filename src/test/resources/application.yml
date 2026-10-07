@@ -29,3 +29,7 @@ app:
   storage:
     location: ${java.io.tmpdir}/be-interview-prep-set2-test/uploads
     max-file-size: 5MB
+  rate-limit:
+    limit: 10
+    window: 1m
+    header-name: X-API-Key
